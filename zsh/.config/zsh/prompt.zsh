@@ -14,7 +14,14 @@ line1() {
 
     # git
     local git_branch=''
-    git_branch=$(git symbolic-ref --quiet --short HEAD 2>/dev/null)
+    if [[ -f .git/HEAD ]]; then
+        IFS= read -r head < .git/HEAD
+
+        if [[ $head == 'ref: refs/heads/'* ]]; then
+            git_branch=${head#'ref: refs/heads/'}
+        fi
+    fi
+
     if [[ -n $git_branch ]]; then
         print -nP "  %F{yellow}git:${git_branch}%f"
         (( gap-=6+${#git_branch} ))
