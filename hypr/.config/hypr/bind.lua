@@ -53,7 +53,7 @@ hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_S
 hl.bind("XF86MonBrightnessUp",  hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
 hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
 
-hl.bind("Print" ,hl.dsp.exec_cmd('hyprshot -m region --clipboard-only'))
+hl.bind("Print" ,hl.dsp.exec_cmd('hyprshot -m region'))
 
 -- Group
 hl.bind(mainMod .. " + G", hl.dsp.group.toggle())
