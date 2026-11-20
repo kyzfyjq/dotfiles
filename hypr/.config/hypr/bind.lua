@@ -61,8 +61,10 @@ hl.bind(mainMod .. " + G", hl.dsp.group.toggle())
 hl.bind(mainMod .. " + Tab",         hl.dsp.group.next())
 hl.bind(mainMod .. " + SHIFT + Tab", hl.dsp.group.prev())
 
-hl.bind(mainMod .. " + E", hl.dsp.group.lock_active())
+hl.bind(mainMod .. " + E", hl.dsp.group.lock())
 
 hl.bind(mainMod .. " + SHIFT + G", hl.dsp.window.move({
     out_of_group = true
 }))
+
+hl.bind("SUPER + F8", hl.dsp.exec_cmd("~/.local/bin/autoclicker-toggle"))

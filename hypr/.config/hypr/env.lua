@@ -1,6 +1,6 @@
 hl.env("QT_IM_MODULE", "fcitx")
 hl.env("XMODIFIERS", "@im=fcitx")
-hl.env("ZDOTDIR", "/home/YSYYRPS/.config/zsh")
+hl.env("ZDOTDIR", "/home/kyzfyjq/.config/zsh")
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")

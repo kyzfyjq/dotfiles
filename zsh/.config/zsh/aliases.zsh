@@ -1,8 +1,9 @@
-alias ls='ls --color=auto'
-alias la='ls -Ahl --group-directories-first --time-style=long-iso'
-alias ll='ls -hl --group-directories-first --time-style=long-iso'
+alias la='eza -lahoF --group-directories-first -b --smart-group --time-style=long-iso --git'
+alias ll='eza -lhoF --group-directories-first -b --smart-group --time-style=long-iso --git'
 
 alias -g ...='../..'
 alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g ......='../../../../..'
+
+alias rm='rm -I --preserve-root'

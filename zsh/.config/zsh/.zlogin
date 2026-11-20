@@ -1,0 +1,6 @@
+echo "================================"
+echo " Login shell started"
+echo " User: $USER"
+echo " Host: $HOST"
+echo " Time: $(date)"
+echo "================================"
